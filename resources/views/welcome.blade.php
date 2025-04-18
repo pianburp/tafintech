@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TA Fintech Solution</title>
+    <title>TA Fintech</title>
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
@@ -60,7 +60,7 @@
 <body
     class="font-sans antialiased bg-gradient-to-b from-gray-50 to-gray-100 dark:from-black dark:to-gray-900 dark:text-white/50 min-h-screen">
     <!-- Hero Section -->
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden h-screen">
         <!-- Hero Background Image -->
         <div class="absolute inset-0 z-0">
             <img src="{{ asset('storage/images/bg-img.jpg') }}" alt="Background"
@@ -75,27 +75,27 @@
             <nav class="relative max-w-7xl mx-auto px-6">
                 <div class="flex items-center justify-between h-16">
                     <div class="flex items-center gap-4">
-                        <a href="#" class="text-2xl font-bold text-[#6b6b4a]">TA Fintech</a>
+                        <a href="#hero" class="text-2xl font-bold text-[#E09A53] transition-colors duration-300">TA Fintech</a>
                     </div>
 
                     <!-- Desktop Navigation -->
                     <div class="hidden md:flex items-center gap-6">
                         <a href="#services"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">Services</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">Services</a>
                         <a href="#faq"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">FAQ</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">FAQ</a>
                         <a href="#contact"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">Contact</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">Contact</a>
 
                         @auth
                             <a href="{{ url('/dashboard') }}"
-                                class="bg-[#6b6b4a] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Dashboard</a>
+                                class="bg-[#E09A53] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}"
-                                class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">Login</a>
+                                class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">Login</a>
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}"
-                                    class="bg-[#6b6b4a] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Register</a>
+                                    class="bg-[#E09A53] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Register</a>
                             @endif
                         @endauth
                     </div>
@@ -115,36 +115,35 @@
                 <div class="hidden md:hidden pb-4" id="mobile-menu">
                     <div class="flex flex-col gap-4">
                         <a href="#services"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">Services</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">Services</a>
                         <a href="#faq"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">FAQ</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">FAQ</a>
                         <a href="#contact"
-                            class="text-gray-700 dark:text-gray-300 hover:text-[#6b6b4a] dark:hover:text-[#6b6b4a] transition">Contact</a>
+                            class="text-gray-700 dark:text-gray-300 hover:text-[#E09A53] dark:hover:text-[#E09A53] transition">Contact</a>
                     </div>
                 </div>
             </nav>
         </header>
 
         <!-- Hero Content -->
-        <div class="relative pt-32 pb-16 sm:pt-40 sm:pb-24">
+        <div id="hero" class="relative flex items-center justify-center h-full">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center">
-                    <h1 class="animate-fade-in-up text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-                        Your Financial Future
-                        <span class="text-[#6b6b4a]">Starts Here</span>
+                    <h1 class="animate-fade-in-up text-4xl sm:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+                        Your Dream Computer
+                        <span class="text-[#E09A53]">Starts Here</span>
                     </h1>
                     <p
-                        class="animate-fade-in-up animate-delay-200 text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-                        Expert financial solutions tailored to your needs. Start your journey towards financial freedom
-                        today.
+                        class="animate-fade-in-up animate-delay-200 text-2xl text-gray-800 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Expert technical technician to craft your dream computer.
                     </p>
                     <div class="flex justify-center gap-4">
                         <a href="#services"
-                            class="animate-fade-in-up animate-delay-300 bg-[#6b6b4a] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition">
+                            class="animate-fade-in-up animate-delay-300 bg-[#E09A53] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition">
                             Get Started
                         </a>
                         <a href="#contact"
-                            class="animate-fade-in-up animate-delay-400 border border-[#6b6b4a] text-[#6b6b4a] px-8 py-3 rounded-lg hover:bg-[#6b6b4a] hover:text-white transition">
+                            class="animate-fade-in-up animate-delay-400 border border-[#E09A53] text-[#E09A53] px-8 py-3 rounded-lg hover:bg-[#E09A53] hover:text-white transition">
                             Contact Us
                         </a>
                     </div>
@@ -154,36 +153,35 @@
     </div>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-white dark:bg-gray-900">
+    <section id="services" class="py-12 bg-[#FDF6EC] dark:bg-[#28221b]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16 scroll-fade">
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Services</h2>
                 <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Comprehensive financial solutions designed to help you achieve your goals
+                    Comprehensive computer solutions designed to help you achieve your goals
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="group bg-white dark:bg-zinc-800 p-8 rounded-xl shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
                     <div
-                        class="absolute inset-0 bg-gradient-to-r from-[#6b6b4a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute inset-0 bg-gradient-to-r from-[#E09A53]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="relative">
                         <div class="flex flex-col items-center mb-4">
-                            <svg class="w-12 h-12 text-[#6b6b4a] mb-4 transform group-hover:scale-110 transition-transform duration-300"
+                            <svg class="w-12 h-12 text-[#E09A53] mb-4 transform group-hover:scale-110 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                                 </path>
                             </svg>
                             <h3
-                                class="font-semibold text-2xl text-[#6b6b4a] mb-3 transform transition-transform duration-300">
-                                One Click Investment</h3>
+                                class="font-semibold text-2xl text-[#E09A53] mb-3 transform transition-transform duration-300">
+                                Fix PC Component</h3>
                         </div>
                         <p class="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                            Our company prioritizes safe capital management with up to 5% monthly return with a single
-                            click.
+                            Our specialist can fix your PC problem
                         </p>
                     </div>
                 </div>
@@ -191,23 +189,26 @@
                 <div
                     class="group bg-white dark:bg-zinc-800 p-8 rounded-xl shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
                     <div
-                        class="absolute inset-0 bg-gradient-to-r from-[#6b6b4a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute inset-0 bg-gradient-to-r from-[#E09A53]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="relative">
                         <div class="flex flex-col items-center mb-4">
-                            <svg class="w-12 h-12 text-[#6b6b4a] mb-4 transform group-hover:scale-110 transition-transform duration-300"
+                            <svg class="w-12 h-12 text-[#E09A53] mb-4 transform group-hover:scale-110 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10a3 3 0 11-6 0 3 3 0 016 0z">
                                 </path>
                             </svg>
                             <h3
-                                class="font-semibold text-2xl text-[#6b6b4a] mb-3 transform transition-transform duration-300">
-                                Trading Education</h3>
+                                class="font-semibold text-2xl text-[#E09A53] mb-3 transform transition-transform duration-300">
+                                Computer Advisor</h3>
                         </div>
                         <p class="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                            Our company provides the best trading syllabus and mentorship for aspiring traders.
+                            Our specialist can advise on your custom build PC
                         </p>
                     </div>
                 </div>
@@ -215,24 +216,24 @@
                 <div
                     class="group bg-white dark:bg-zinc-800 p-8 rounded-xl shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
                     <div
-                        class="absolute inset-0 bg-gradient-to-r from-[#6b6b4a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        class="absolute inset-0 bg-gradient-to-r from-[#E09A53]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                     <div class="relative">
                         <div class="flex flex-col items-center mb-4">
-                            <svg class="w-12 h-12 text-[#6b6b4a] mb-4 transform group-hover:scale-110 transition-transform duration-300"
+                            <svg class="w-12 h-12 text-[#E09A53] mb-4 transform group-hover:scale-110 transition-transform duration-300"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4">
                                 </path>
                             </svg>
                             <h3
-                                class="font-semibold text-2xl text-[#6b6b4a] mb-3 transform transition-transform duration-300">
-                                Affiliates</h3>
+                                class="font-semibold text-2xl text-[#E09A53] mb-3 transform transition-transform duration-300">
+                                Software developing</h3>
                         </div>
                         <p class="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                            Earn up to 10% bonus when you refer your friends and family to join our investment
-                            community.
+                            Struggling to develop software? We are helping you to develop web application or mobile
+                            application
                         </p>
                     </div>
                 </div>
@@ -241,7 +242,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id= "faq" class="py-12 bg-gray-50 dark:bg-gray-900">
+    <section id= "faq" class="py-12 bg-[#FDF6EC] dark:bg-[#28221b]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-fade">
             <!-- Header -->
             <div class="text-center">
@@ -249,7 +250,7 @@
                     Frequently Asked Questions
                 </h2>
                 <p class="mt-4 text-lg leading-6 text-gray-600 dark:text-gray-400">
-                    Find answers to common questions about our financial services
+                    Find answers to common questions about our computer services
                 </p>
             </div>
 
@@ -275,8 +276,8 @@
                         <dd
                             class="mt-2 pr-12 max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                             <p class="text-base text-gray-600 dark:text-gray-400">
-                                We currently do financial services including diversified investment, trading education
-                                and affiliates.
+                                We currently do computer services such as fixing computer parts,
+                                custom build PC and develop software for web and mobile application.
                             </p>
                         </dd>
                     </div>
@@ -286,8 +287,8 @@
                             <button
                                 class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                                 aria-controls="faq-2" aria-expanded="false">
-                                <span class="font-semibold">Is the money invested guaranteed to have positive return
-                                    every month?</span>
+                                <span class="font-semibold">What framework do you use to develop web and mobile
+                                    application?</span>
                                 <span class="ml-6 flex h-7 items-center">
                                     <svg class="h-6 w-6 transform transition-transform duration-200 text-gray-400 dark:text-gray-500"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -301,8 +302,8 @@
                         <dd
                             class="mt-2 pr-12 max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                             <p class="text-base text-gray-600 dark:text-gray-400">
-                                No, speculating on financial derivatives can be challenging, even big banks can be
-                                liquidated. We try our best to meet client's monthly objective.
+                                We actively use laravel breeze for web application and ionic angular for mobile
+                                application
                             </p>
                         </dd>
                     </div>
@@ -312,7 +313,8 @@
                             <button
                                 class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                                 aria-controls="faq-3" aria-expanded="false">
-                                <span class="font-semibold">Is this MLM?</span>
+                                <span class="font-semibold">Is this the place to provide cheapest price for PC
+                                    component?</span>
                                 <span class="ml-6 flex h-7 items-center">
                                     <svg class="h-6 w-6 transform transition-transform duration-200 text-gray-400 dark:text-gray-500"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -326,9 +328,7 @@
                         <dd
                             class="mt-2 pr-12 max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                             <p class="text-base text-gray-600 dark:text-gray-400">
-                                No, MLM relies heavily on new client but we have sufficient liquidity to run this
-                                services. We still try our best to provide services with top quality and competent
-                                prices to our clients.
+                                Maybe, we provide best offer price to the customers.
                             </p>
                         </dd>
                     </div>
@@ -338,7 +338,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-white dark:bg-gray-900">
+    <section id="contact" class="py-12 bg-[#FDF6EC] dark:bg-[#28221b]">
         <div class="max-w-7xl mx-auto px-6 scroll-fade">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get in Touch</h2>
@@ -353,22 +353,22 @@
                         <div>
                             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
                             <input type="text"
-                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#6b6b4a] focus:border-transparent transition">
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#E09A53] focus:border-transparent transition">
                         </div>
                         <div>
                             <label
                                 class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
                             <input type="email"
-                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#6b6b4a] focus:border-transparent transition">
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#E09A53] focus:border-transparent transition">
                         </div>
                         <div>
                             <label
                                 class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
                             <textarea rows="4"
-                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#6b6b4a] focus:border-transparent transition"></textarea>
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-zinc-700 focus:ring-2 focus:ring-[#E09A53] focus:border-transparent transition"></textarea>
                         </div>
                         <button type="submit"
-                            class="w-full bg-[#6b6b4a] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
+                            class="w-full bg-[#E09A53] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
                             Send Message
                         </button>
                     </form>
@@ -391,22 +391,22 @@
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Email Us</h3>
                             <div class="space-y-2 text-gray-600 dark:text-gray-400">
                                 <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-[#6b6b4a]" fill="none" stroke="currentColor"
+                                    <svg class="w-5 h-5 text-[#E09A53]" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                     <a href="mailto:ta.fintech@gmail.com"
-                                        class="hover:text-[#6b6b4a] transition-colors">ta.fintech@gmail.com</a>
+                                        class="hover:text-[#E09A53] transition-colors">ta.fintech@gmail.com</a>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-[#6b6b4a]" fill="none" stroke="currentColor"
+                                    <svg class="w-5 h-5 text-[#E09A53]" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                     <a href="mailto:ta.hanifasyraf@gmail.com"
-                                        class="hover:text-[#6b6b4a] transition-colors">ta.hanifasyraf@gmail.com</a>
+                                        class="hover:text-[#E09A53] transition-colors">ta.hanifasyraf@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -501,8 +501,20 @@
     // Scroll-based navigation highlight
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const title = document.querySelector('a.text-2xl.font-bold');
 
     window.addEventListener('scroll', () => {
+        const servicesSection = document.getElementById('services');
+        const scrollPosition = window.scrollY;
+
+        // Check if we've scrolled past the services section
+        if (servicesSection && scrollPosition >= servicesSection.offsetTop - 100) {
+            title.classList.remove('text-[#E09A53]');
+            title.classList.add('text-gray-900', 'dark:text-white');
+        } else {
+            title.classList.remove('text-gray-900', 'dark:text-white');
+            title.classList.add('text-[#E09A53]');
+        }
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -513,9 +525,9 @@
         });
 
         navLinks.forEach(link => {
-            link.classList.remove('text-[#6b6b4a]');
+            link.classList.remove('text-[#E09A53]');
             if (link.getAttribute('href').includes(current)) {
-                link.classList.add('text-[#6b6b4a]');
+                link.classList.add('text-[#E09A53]');
             }
         });
     });
